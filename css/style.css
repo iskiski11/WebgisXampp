@@ -1,0 +1,462 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #111, #222); /* Dark background */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Style Kerangka Secara Umum */
+  html {
+    scroll-behavior: smooth;
+    caret-color: transparent;
+  }
+  
+  /* Seluruh Komponen Pada Header */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Updated header with dark gradient */
+  #navbar {
+    background: linear-gradient(135deg, #000, #333);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 2px solid #444;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+  }
+  
+  nav ul li a:hover::before {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+  }
+  
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 80px;
+  }
+  
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .intro {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  .title-container {
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .title-container p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Map Section */
+  #map-section {
+    background: linear-gradient(to bottom, #222, #111);
+    padding: 40px 0;
+  }
+  
+  #map {
+    width: 95%;
+    height: 800px;
+    background-color: #333;
+    margin: 40px auto;
+    border: 2px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #map-section h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  /* Data Section */
+  #data-section {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #111, #222);
+  }
+  
+  #data-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  #data-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .column {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .data-item {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .data-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .data-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .data-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .description {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .description h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .description p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Author Section */
+  #author-section {
+    background: linear-gradient(to bottom, #222, #111);
+    padding: 40px 20px;
+    text-align: justify;
+  }
+  
+  .author-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .author-content h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .author-name {
+    text-align: center;
+  }
+  
+  .author-name h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  .profile-picture {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .author-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+  }
+  
+  /* Footer */
+  #footer {
+    background: linear-gradient(135deg, #000, #222);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-shrink: 0;
+  }
+  
+  .footer-content h3,
+  .footer-content p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .title-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .title-container h1 {
+      font-size: 1.8rem;
+    }
+  
+    .title-container p {
+      font-size: 1rem;
+    }
+  
+    .hero-section {
+      height: 100vh;
+    }
+  
+    .profile-picture {
+      height: 150px;
+    }
+  
+    #navbar .container {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    nav ul {
+      margin-top: 10px;
+    }
+  
+    nav ul li {
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .title-container p {
+      font-size: 0.9rem;
+    }
+  }  
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-section .intro {
+    z-index: 2;
+}
+
+.legend {
+  padding: 6px 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+border-radius: 5px;
+}
+
+.legend div {
+width: 30px;
+height: 15px;
+float: left;
+margin-right: 8px;
+opacity: 0.7;
+}
+
+div.legend.leaflet-control br {
+clear: both;
+}
